@@ -30,9 +30,9 @@ func Get_Command_Line_Args() (string, string, string, string) {
 	PasswordPtr := flag.String("password", "BOGUS", "Qualys Account password")
 	APIURLPtr := flag.String("APIURL", "https://qualysapi.qualys.com/", "Qualys API endpoint")
 	CSVName := flag.String("filename", "VLANS.txt", "VLAN File")
-	ScannerName := flag.String("scannerID", "", "ScannerID")
+	ScannerName := flag.String("scannerName", "", "ScannerName")
 	flag.Parse()
-	return *UserPtr, *PasswordPtr, *APIURLPtr, *CSVName
+	return *UserPtr, *PasswordPtr, *APIURLPtr, *scannerName
 }
 
 func GetScannerNamesIDs() []struct {

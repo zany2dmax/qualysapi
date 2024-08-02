@@ -105,11 +105,11 @@ func main() {
 	}
 	// Query the scanner by name
 	//scannerName := "ABC123"
-	id, status, err := queryScanner(vscanners, scannerName)
+	ID, status, err := queryScanner(vscanners, scannerName)
 	if err != nil {
 		fmt.Println("Error querying scanner:", err)
 	} else {
-		fmt.Printf("Scanner ID: %s, Status: %s\n", id, status)
+		fmt.Printf("Scanner ID: %s, Status: %s\n", ID, status)
 	}
 	//Now we have the ScannerID to setup the VLANs
 }
